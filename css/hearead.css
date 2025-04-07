@@ -1,0 +1,243 @@
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #d8d8c7;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+/* Navigation Styles */
+header {
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+main {
+    padding: 40px 60px;
+}
+
+/* Main Content */
+.hero-section {
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-heading {
+    font-size: 3.8rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.hero-heading span {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.book-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    right: 180px;
+    top: 120px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Story Cards Section */
+.stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 40px 60px;
+}
+
+.story-card {
+    background-color: #6b735f;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: #f0f0ea;
+    margin-bottom: 20px;
+}
+
+.story-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.story-author {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #d8d8c7;
+}
+
+.story-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.arrow-indicator {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    color: #555;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin-bottom: 5px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #777;
+}

@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e9eadc;
+}
+
+/* Header and Navigation */
+header {
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/* Main Layout */
+main {
+    padding: 40px 60px;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10%;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.hero-img {
+    width: 30%;
+    position: relative;
+}
+
+.hero-img img {
+    width: 100%;
+    display: block;
+}
+
+.date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero-content {
+    width: 70%;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.color-accent {
+    color: #606c38;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Education Section */
+.education {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.education-left,
+.education-right {
+    width: 50%;
+}
+
+.education-right {
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.education-item .bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.education-item .year {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.education-item .school {
+    font-weight: bold;
+}
+
+/* Hobbies Section */
+.hobbies {
+    margin-bottom: 60px;
+}
+
+.hobby-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hobby-item {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    width: 48%;
+}
+
+.hobby-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Experience Section */
+.experience {
+    margin-bottom: 60px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.experience-item {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.experience-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experience-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Activities Section */
+.activities {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.activities-left,
+.activities-right {
+    width: 50%;
+    display: grid;
+    gap: 15px;
+}
+
+.activities-left {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.activities-right {
+    grid-template-rows: repeat(3, 1fr);
+    padding-left: 15px;
+}
+
+.activity-item {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.activity-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activity-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Footer Section */
+footer {
+    background-color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    color: #555;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin-bottom: 5px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #777;
+    width: 100%;
+}
