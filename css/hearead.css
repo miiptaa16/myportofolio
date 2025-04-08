@@ -1,17 +1,17 @@
-        /* Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+/* Global Styles */
+* {
+     margin: 0;
+     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        body {
-            background-color: #d8d8c7;
-            color: #333;
-        }
+body {
+    background-color: #d8d8c7;
+    color: #333;
+     }
 
-        a {
+     a {
             text-decoration: none;
             color: inherit;
         }
@@ -82,20 +82,23 @@ main {
 }
 
 .book-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;     
+    overflow: hidden;       
     position: absolute;
     right: 180px;
     top: 120px;
     z-index: 1;
-    overflow: hidden;
+    border: 4px solid #fff; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
 
 .book-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;      /* Gambar tetap proporsional */
+    display: block;
 }
 
 /* Story Cards Section */
