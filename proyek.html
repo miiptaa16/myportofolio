@@ -1,220 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mifta's Portofolio</title>
-    <link rel="stylesheet" href="css/proyek.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap" rel="stylesheet">
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mifta's Portofolio</title>
+        <link rel="stylesheet" href="css/proyek.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Basley&family=Poppins:wght@400;500;600&display=swap">
+    </head>
 <body>
     <header>
-        <nav>
-          <div class="logo">
-            <img src="images/Logo (1).png" alt="Mifta Logo">
-        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/Logo (1).png" alt="Mifta Logo">
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#proyek">Proyek</a></li>
-                <li><a href="#skills">Skill</a></li>
-                <li><a href="#hearead">HeaRead</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="proyek.html" class="active" >Proyek</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="hearead.html">HeaRead</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="hero-text">
-        <h3>LET'S CHECK MY HOT WORKS</h3>
-    </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <section class="hotworks-section">
+        <div class="circle-image">
+          <div class="circle-deco"></div>
+          <img src="images/FOTO.jpg" alt="Hot Works">
+        </div>
+        <div class="hotworks-text">
+          <h3>Let’s <br><span>Check My</span> <br><strong>Hot Works</strong></h3>
+          <div class="line-deco"></div>
+        </div>
+      </section>      
+      
 <!-- Portfolio Grid -->
 <div class="portfolio-grid">
     <!-- Model Bisnis -->
     <div class="portfolio-item">
-        <div class="browser-window">
-            <div class="browser-dots">
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-            </div>
-            <div class="browser-content">
-                <img src="images/model bisnis.png" alt="Model Bisnis">
-            </div>
+      <div class="browser-window">
+        <div class="browser-dots">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
         </div>
-        <div class="title">Model Bisnis</div>
+        <div class="browser-content">
+          <img src="images/model bisnis.png" alt="Model Bisnis">
+        </div>
+      </div>
+      <div class="title">Model Bisnis</div>
+      <a href="https://www.figma.com/design/qalp3yy6g0gfF4CKmyBG72/Tim-1-(Kelas-A)?m=auto&t=i7jca1fYy97dOF7e-6" class="cek-detail">Cek Detail</a>
     </div>
 
     <!-- E-commerce -->
     <div class="portfolio-item">
-        <div class="browser-window">
-            <div class="browser-dots">
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-            </div>
-            <div class="browser-content">
-                <div class="e-commerce-content">
-                    <img src="images/ecom.png" alt="Model Bisnis"> 
-                </div>
-            </div>
+      <div class="browser-window">
+        <div class="browser-dots">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
         </div>
-        <div class="title">E-commerce</div>
+        <div class="browser-content">
+          <img src="images/ecom.png" alt="E-commerce"> 
+        </div>
+      </div>
+      <div class="title">E-commerce</div>
+      <a href="https://siput-lab-miftahul-jannah-usmans-projects.vercel.app/" class="cek-detail">Cek Detail</a>
     </div>
 
     <!-- Django -->
     <div class="portfolio-item">
-        <div class="browser-window">
-            <div class="browser-dots">
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-            </div>
-            <div class="browser-content">
-                <img src="images/django.png" alt="Django">
-            </div>
+      <div class="browser-window">
+        <div class="browser-dots">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
         </div>
-        <div class="title">Django</div>
+        <div class="browser-content">
+          <img src="images/django.png" alt="Django">
+        </div>
+      </div>
+      <div class="title">Django</div>
+      <a href="https://github.com/miiptaa16/A2Store" class="cek-detail">Cek Detail</a>
     </div>
 
     <!-- Dashboard Analitik -->
     <div class="portfolio-item">
-        <div class="browser-window">
-            <div class="browser-dots">
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-            </div>
-            <div class="browser-content">
-                <div class="dashboard-content">
-                    <img src="images/analitik.jpg" alt="Django">
-                </div>
-            </div>
+      <div class="browser-window">
+        <div class="browser-dots">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
         </div>
-        <div class="title">Dashbor Analitik</div>
+        <div class="browser-content">
+          <img src="images/analitik.jpg" alt="Dashboard Analitik">
+        </div>
+      </div>
+      <div class="title">Dashbor Analitik</div>
+      <a href="https://datapenjualankelompok1.shinyapps.io/Kelompok1//" class="cek-detail">Cek Detail</a>
     </div>
 
     <!-- Digital Marketing -->
     <div class="portfolio-item">
-        <div class="browser-window">
-            <div class="browser-dots">
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-            </div>
-            <div class="browser-content">
-                <img src="images/digmar.jpg" alt="Digital Marketing">
-            </div>
+      <div class="browser-window">
+        <div class="browser-dots">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
         </div>
-        <div class="title">Digital Marketing</div>
+        <div class="browser-content">
+          <img src="images/digmar.jpg" alt="Digital Marketing">
+        </div>
+      </div>
+      <div class="title">Digital Marketing</div>
+      <a href="https://www.instagram.com/switchease_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="cek-detail">Cek Detail</a>
     </div>
 
     <!-- BMC -->
     <div class="portfolio-item">
-        <div class="browser-window">
-            <div class="browser-dots">
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-            </div>
-            <div class="browser-content bmc-image">
-                <img src="images/BMC.jpg" alt="Business Model Canvas">
-            </div>
+      <div class="browser-window">
+        <div class="browser-dots">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
         </div>
-        <div class="title">BMC</div>
+        <div class="browser-content">
+          <img src="images/BMC.jpg" alt="Business Model Canvas">
+        </div>
+      </div>
+      <div class="title">BMC</div>
+      <a href="https://drive.google.com/file/d/12KK-urI69QxVx5yIdsbDX0_js8T54azP/view?usp=sharing" class="cek-detail">Cek Detail</a>
     </div>
 
     <!-- Study Board -->
     <div class="portfolio-item">
-        <div class="browser-window">
-            <div class="browser-dots">
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-            </div>
-            <div class="browser-content">
-                <img src="images/st.jpg" alt="Study Board">
-            </div>
+      <div class="browser-window">
+        <div class="browser-dots">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
         </div>
-        <div class="title">Study Board</div>
+        <div class="browser-content">
+          <img src="images/st.jpg" alt="Study Board">
+        </div>
+      </div>
+      <div class="title">Study Board</div>
+      <a href="https://miftahuljannahusman1605.blogspot.com/2024/09/a-fun-digital-marketing-challenge_30.html?m=1" class="cek-detail">Cek Detail</a>
     </div>
 
     <!-- Mini Vlog -->
     <div class="portfolio-item">
-        <div class="browser-window">
-            <div class="browser-dots">
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-            </div>
-            <div class="browser-content">
-                <img src="images/vlog.jpg" alt="Mini Vlog">
-            </div>
+      <div class="browser-window">
+        <div class="browser-dots">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
         </div>
-        <div class="title">Mini Vlog</div>
+        <div class="browser-content">
+          <img src="images/vlog.jpg" alt="Mini Vlog">
+        </div>
+      </div>
+      <div class="title">Mini Vlog</div>
+      <a href="https://www.instagram.com/reel/C3_72EzL6KKSUfgrj8lHMzaxXEmEWXjs2M4W6Y0/" class="cek-detail">Cek Detail</a>
     </div>
 
-    <!-- WordPress - Wider item -->
+    <!-- WordPress - Wide -->
     <div class="portfolio-item portfolio-wide">
-        <div class="browser-window">
-            <div class="browser-dots">
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-                <div class="browser-dot"></div>
-            </div>
-            <div class="browser-content">
-                <img src="images/django ecom.png" alt="WordPress">
-            </div>
+      <div class="browser-window">
+        <div class="browser-dots">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
         </div>
-        <div class="title">WordPress</div>
+        <div class="browser-content">
+          <img src="images/django ecom.png" alt="WordPress">
+        </div>
+      </div>
+      <div class="title">WordPress</div>
+      <a href="https://drive.google.com/drive/folders/1b1ufX_wPugPJWbO4rNJccQ1C3rRJQNXp" class="cek-detail">Cek Detail</a>
     </div>
-</div>
+  </div>
     
 <!-- Footer -->
-    <footer>
-        <div class="logo">
-            <img src="images/Logo (1).png" alt="Mifta Logo">
+<footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/Logo (1).png" alt="Mifta Logo">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
         </div>
-        <div class="footer-nav">
-            <div class="footer-nav-title">Navigasi</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Proyek</a></li>
-                <li><a href="#">Skill</a></li>
-                <li><a href="#">HeaRead</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+      </div>
+  
+      <div class="footer-nav">
+        <div class="footer-nav-title">Navigasi</div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Proyek</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Skill</a></li>
+            <li><a href="#">HeaRead</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-        <div class="footer-contact">
-            <div class="contact-item">
-                <div class="contact-icon">📞</div>
-                <div>+6287728537917</div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">✉️</div>
-                <div>mifta16052005@gmail.com</div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">📍</div>
-                <div>Makassar, Sulawesi Selatan</div>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
+      </div>
+  
+      <div class="footer-contact">
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>+6287728537917</span>
         </div>
-    </footer>
-    <div class="copyright">© 2025 Miftahul Jannah Usman. All rights reserved.</div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>mj16052005@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Makassar, Sulawesi Selatan</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="copyright">© 2025 Miftahul Jannah Usman. All rights reserved.</div>
 </body>
 </html>

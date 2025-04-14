@@ -1,149 +1,250 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 body {
-    background-color: #d8d8c7;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-/* Navigation Styles */
+/* Header */
 header {
-    background-color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.logo img {
-    height: 45px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
 }
 
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Navigation Menu */
 .nav-links {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: black;
-    font-weight: 600;
+    font-weight: 400;
+    transition: 0.3s;
 }
 
-main {
-    padding: 40px 60px;
+.nav-links li a.active {
+    font-weight: 700;
+}
+
+.nav-links li a:hover {
+    font-weight: 700;
+}
+
+/* Font Defaults */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Thambi 2', cursive;
+    background: linear-gradient(to right, #f1f1eb, #e4e4d9);
+    color: #1f1f1f;
+}
+
+.main-content {
+    background: linear-gradient(to bottom right, #d7dbcf, #cdd2c4);
+    padding: 60px 20px;
+}
+
+.section-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px 0 30px;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+
+.section-heading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #7c9a6d;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
 }
 
 .skill-icon {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
+    background-color: #e8e8e8;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
 }
 
 .skill-icon:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.skill-icon:active {
-    transform: scale(0.92);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+.skill-icon img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 8px;
 }
 
+.skill-label {
+    font-size: 0.95rem;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
 
-/* Footer */
+/* Footer Section */
 footer {
-    background-color: #fff;
-    padding: 20px 10%;
+    background-color: #ffffff;
+    padding: 30px 6%;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 2rem;
-    color: #555;
-}
-
-.footer-nav {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* LOGO + ICON */
+  .footer-logo {
     display: flex;
     flex-direction: column;
-}
-
-.footer-nav-title {
+    align-items: flex-start;
+  }
+  
+  .footer-logo img {
+    width: 140px; /* Lebih besar dari sebelumnya */
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: #2f2f2f;
+  }
+  
+  /* NAVIGASI */
+  .footer-nav-title {
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.footer-nav ul {
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .footer-links ul {
     list-style: none;
-}
-
-.footer-nav ul li {
-    margin-bottom: 5px;
-}
-
-.footer-nav ul li a {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 6px;
+  }
+  
+  .footer-links ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 0.9rem;
-}
-
-.footer-contact {
+    font-size: 0.95rem;
+  }
+  
+  /* KONTAK */
+  .footer-contact {
     display: flex;
     flex-direction: column;
-}
-
-.contact-item {
+    gap: 10px;
+  }
+  
+  .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-}
-
-.contact-icon {
-    width: 20px;
-    height: 20px;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .contact-item i {
     margin-right: 10px;
-    background-color: #ddd;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-icons {
-    display: flex;
-    margin-top: 10px;
-}
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #ddd;
-    border-radius: 5px;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.copyright {
+    color: #2f2f2f;
+  }
+  
+  /* COPYRIGHT */
+  .copyright {
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     font-size: 0.8rem;
-    color: #777;
-}
+    color: #5e6650;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-contact {
+      align-items: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
