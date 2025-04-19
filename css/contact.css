@@ -56,10 +56,12 @@ header {
 
 /* Font Defaults */
 body {
-    background-color: #cfd2bd;
     margin: 0;
-    font-family: 'Besley', serif;
-  }
+    padding: 0;
+    font-family: 'Baloo Thambi 2', cursive;
+    background: linear-gradient(to right, #f1f1eb, #e4e4d9);
+    color: #1f1f1f;
+}
   
   .ping-section {
     text-align: center;
@@ -120,9 +122,9 @@ body {
   
   /* Contact Form */
   .contact-form {
-    max-width: 900px; /* tidak full full banget */
+    max-width: 900px; 
     margin: 0 auto;
-    padding: 0 2rem; /* kiri kanan kasih jarak */
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -140,7 +142,7 @@ body {
     outline: none;
     transition: box-shadow 0.3s ease;
     width: 100%;
-    font-family: 'Arial', sans-serif; /* samakan semua */
+    font-family: 'Arial', sans-serif; 
   }
   
   .contact-form input::placeholder,
@@ -168,7 +170,6 @@ body {
     background-color: #2b3b2b;
   }
   
-  /* Contact Info Boxes */
   .contact-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

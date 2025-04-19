@@ -75,10 +75,25 @@ body {
     flex-wrap: wrap;
   }
   
-  .hero-img {
-    width: 40%;
+  .hero-image {
     position: relative;
+    flex: 1;
+    z-index: 2;
+    max-width: 450px;
+    animation: slideInRightToLeft 1.2s ease-out both;
   }
+
+  @keyframes slideInRightToLeft {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
   
   .image-wrapper {
     position: relative;
