@@ -175,6 +175,22 @@ body {
     color: #444;
   }
   
+  .about {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .about.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Untuk menyembunyikan awalnya */
+  .hidden {
+    display: none;
+  }
+  
 
 /* Education Section */
 .education-container {
@@ -261,6 +277,7 @@ body {
 .experience {
     margin-bottom: 60px;
     padding: 5px 40px;
+    text-align: center;
   }
   
   .experience h2 {
@@ -305,7 +322,6 @@ body {
     border-bottom-right-radius: 12px;
   }
   
-
 /* Activities Section */
 .activities-section {
   padding: 60px 40px;
@@ -353,13 +369,48 @@ body {
   border-radius: 6px;
 }
 
-/* Layout Variasi */
 .tall {
   grid-row: span 2;
 }
 
 .wide {
   grid-column: span 2;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+/* Hover scale for image and cards */
+.experience-item:hover,
+.activity-item:hover,
+.education-item:hover,
+.hobby-item:hover {
+  transform: scale(1.03);
+  transition: transform 0.4s ease;
+}
+
+/* Delay for staggered animation effect */
+.fade-in-up.delay-1 { animation-delay: 0.2s; }
+.fade-in-up.delay-2 { animation-delay: 0.4s; }
+.fade-in-up.delay-3 { animation-delay: 0.6s; }
+
+/* Optional: Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
 }
 
 
