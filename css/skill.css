@@ -65,11 +65,11 @@ body {
 
 .main-content {
     background: linear-gradient(to bottom right, #d7dbcf, #cdd2c4);
-    padding: 60px 20px;
+    padding: 20px 20px;
 }
 
 .section-heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin: 50px 0 30px;
     color: #333;
