@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/Logo (1).png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Baloo+Thambi+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Basley&family=Poppins:wght@400;500;600&display=swap">
@@ -31,90 +32,109 @@
 <section class="contact-section">
   <h2>Ping Me</h2>
   <p class="subtitle">
-    Don’t be a stranger! <a href="#">Shoot me a message</a> and <a href="#">let’s talk</a>
+    Don't be a <span>stranger!</span> Shoot me a message and <span>let's talk</span>
   </p>
 
   <div class="contact-container">
     <form
       class="contact-form"
-      action="https://formspree.io/f/mayzvjgy"
+      action="https://formspree.io/f/mdkggyvg"
       method="POST"
       aria-label="Contact Form"
     >
       <label>
-        <input type="text" name="name" placeholder="Name" required aria-label="Your Name" />
+        <input style="font-family: monospace;" type="text" name="name" placeholder="Name" required aria-label="Your Name" />
       </label>
       <label>
-        <input type="email" name="email" placeholder="Email" required aria-label="Your Email" />
+        <input style="font-family: monospace;" type="email" name="email" placeholder="Email" required aria-label="Your Email" />
       </label>
       <label>
-        <textarea name="message" placeholder="Message" rows="5" required aria-label="Your Message"></textarea>
+        <textarea style="font-family: monospace;" name="message" placeholder="Message" rows="8" required aria-label="Your Message"></textarea>
       </label>
-      <button type="submit">Send Message</button>
+      <div style="text-align: center;">
+        <button type="submit">Submit</button>
+      </div>
     </form>
+    
+    <div id="thankYouMessage" style="display: none; margin-top: 20px;">
+      <h3>Terima kasih atas feedbacknya!</h3>
+    </div>
+    
+    <script>
+      const form = document.getElementById("contactForm");
+      const thankYouMessage = document.getElementById("thankYouMessage");
+    
+      form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Mencegah reload halaman
+        form.style.display = "none"; // Sembunyikan form
+        thankYouMessage.style.display = "block"; // Tampilkan pesan
+      });
+    </script>
+    
   
     <div class="contact-info">
       <div class="info-box">
-        <i class="icon">📍</i>
-        <p>Makassar,<br> Sulawesi Selatan</p>
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Makassar,<br>Sulawesi Selatan</p>
       </div>
       <div class="info-box">
-        <i class="icon">📞</i>
+        <i class="fas fa-phone"></i>
         <p>+6287728537917</p>
       </div>
       <div class="info-box">
-        <i class="icon">✉️</i>
+        <i class="fas fa-envelope"></i>
         <p>mj16052005@gmail.com</p>
       </div>
     </div>
   </div>  
+</section>
 
-   <!-- Footer -->
-   <footer>
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img src="images/Logo (1).png" alt="Mifta Logo">
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/miftahul-jannah-usman-6794462a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/miftahuljnnh.u?igsh=MXRhZmd6YW04MW0wOQ=="><i class="fab fa-instagram"></i></a>
-          <a href="https://x.com/miiptaaa?t=EQMqSapGfUDuYMlIv97ucg&s=09"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://github.com/miiptaa16"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-  
-      <div class="footer-nav">
-        <div class="footer-nav-title">Navigasi</div>
-        <div class="footer-links">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="proyek.html">Proyek</a></li>
-          </ul>
-          <ul>
-            <li><a href="skill.html">Skill</a></li>
-            <li><a href="hearead.html">HeaRead</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-  
-      <div class="footer-contact">
-        <div class="contact-item">
-          <i class="fas fa-phone-alt"></i>
-          <span>+6287728537917</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <span>mj16052005@gmail.com</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Makassar, Sulawesi Selatan</span>
-        </div>
+<!-- Footer yang sama persis dengan HeaRead -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/Logo (1).png" alt="Mifta Logo">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/miftahul-jannah-usman-6794462a1"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/miftahuljnnh.u"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/miiptaaa"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://github.com/miiptaa16"><i class="fab fa-github"></i></a>
       </div>
     </div>
-  </footer>
-  
-  <div class="copyright">© 2025 Miftahul Jannah Usman. All rights reserved.</div>
+
+    <div class="footer-nav">
+      <div class="footer-nav-title">Navigasi</div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+        </ul>
+        <ul>
+          <li><a href="skill.html">Skill</a></li>
+          <li><a href="hearead.html">HeaRead</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <span>+6287728537917</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>mj16052005@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Makassar, Sulawesi Selatan</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">© 2025 Miftahul Jannah Usman. All rights reserved.</div>
 </body>
 </html>
