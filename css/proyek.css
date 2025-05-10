@@ -201,11 +201,11 @@ body {
   text-align: center;
   height: 100%;
   box-shadow: 
-    0 4px 10px rgba(0,0,0,0.05), /* bayangan luar */
-    inset 0 0 0 1px black;       /* garis pinggir bagian dalam */
+    0 4px 10px rgba(0,0,0,0.05), 
+    inset 0 0 0 1px black;       
   transition: transform 0.3s;
   position: relative;
-  border: 1px solid black; /* garis luar */
+  border: 1px solid black; 
 }
 
 
